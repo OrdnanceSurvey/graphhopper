@@ -99,7 +99,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>jquery</artifactId>
-            <version>2.2.3</version>
+            <version>3.7.1</version>
         </dependency>
         <dependency>
             <groupId>org.webjars.npm</groupId>
@@ -181,9 +181,7 @@
                         <phase>process-resources</phase>
                         <configuration>
                             <target>
-                                <untar compression="gzip"
-                                       src="${basedir}/target/graphhopper-graphhopper-maps-bundle-${graphhopper-maps.version}.tgz"
-                                       dest="${basedir}/target/classes/com/graphhopper/maps">
+                                <untar compression="gzip" src="${basedir}/target/graphhopper-graphhopper-maps-bundle-${graphhopper-maps.version}.tgz" dest="${basedir}/target/classes/com/graphhopper/maps">
                                     <patternset>
                                         <include name="package/dist/**"/>
                                         <exclude name="package/dist/config.js"/>
